@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+body{
+    background: url('../Imgs/Fondo.png');
+    background-attachment: fixed;
+    font-family: Helvetica, Arial;
+    cursor: url('../css/Cursores/Pointer.png'), auto;
+}
+a{
+    cursor: url('../css/Cursores/Cursor2.png'), auto;
+}
+
+#global{
+    border-radius: 10px;
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 25px;
+    background: #F8EAE9;
+    box-shadow: 0px 0px 12px #C88CA1;
+}
+
+#bienvenido{
+    color: white;
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin-top: 27px;
+    padding: 5px;
+    top: 5%;
+    height: auto;
+    line-height: 30px;
+    background-color: rgba(217, 121, 182, 0.70);
+    border-radius: 10px;
+}
+#bienvenido a{
+    font-style: italic;
+}
+
+#logo{
+    border-radius: 10px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    background: #d979b6;
+    color: #F8EAE9;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    float: left;
+}
+
+#menu{
+    line-height: 46px;
+    list-style: none;
+    background-color: #333;
+    width: 88.5%;
+    margin-bottom: 20px;
+    transition: all 300ms;
+}
+#menu, li{
+    border-radius: 10px;
+    height: 46px;
+    display: inline-block;
+}
+#menu li:hover{
+    background-color: #d979b6;
+}
+#menu, a{
+    text-align: center;
+    color: #F8EAE9;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#posts{
+    width: 60%;
+    float: left;
+}
+.post{
+    padding: 5px;
+    overflow: auto;
+
+}
+h2{
+    font-size: 35px;
+    color: #333;
+}
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+.post p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-align: justify;
+}
+.button-plus{
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    background-color: #d979b6;
+    text-decoration: none;
+    width: 70px;
+    float: right;
+}
+
+#sidebar{
+    width: 31%;
+    float: right;
+}
+#sidebar h4{
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 25px;
+    color: #333;
+    background: url("../Imgs/lines.png") repeat;
+}
+#sidebar h4 span{
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+}
+#sidebar img{
+    width: 100%;
+    border-radius: 10px;
+}
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+form textarea,
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #F8EAE9;
+    width: 96%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 2px #d979b6;
+    background-color: #F8EAE9;
+}
+
+form textarea{
+    resize: none;
+    overflow: hidden;
+    height: 200px;
+}
+
+#button-submit{
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    float: center;
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
+footer{
+    text-align: center;
+    color: white;
+    height: 47px;
+    width: 65%;
+    background-color: rgba(217, 121, 182, 0.70);
+    margin: 0px auto;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 47px;
+    border-radius: 10px;
+}
+.bx-wrapper, .bx-viewport{
+    height: auto;
+    width: 98.7%;
+}
+
+#theme-selector{
+    position: fixed;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 135px;
+}
+#to-base,
+#to-dark,
+#to-golden,
+#to-lilac{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: url('../css/Cursores/Cursor2.png'), auto;
+}
+
+#to-base{
+    background: #d979b6;
+}
+#to-dark{
+    background: #160907;
+}
+#to-golden{
+    background: #D9C379;
+}
+#to-lilac{
+    background: #9879D9;
+}
+
+.subir{
+    color: white;
+    display: block;
+    float: right;
+}
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+#acordeon{
+    margin-top: 20px;
+}
+
+#contact h2{
+    margin-top: 20px;
+}
+
+#form_contact{
+    width: 50%;
+    margin-top: 15px;
+}
+
+.label_contact{
+    position: static;
+}

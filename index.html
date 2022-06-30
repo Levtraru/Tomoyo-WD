@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tomoyo no Showroom</title>
+        <!-- Estilos CSS-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link id="theme" rel="stylesheet" type="text/css" href="css/dark.css"/>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Sliders -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- Luxon.js -->
+        <script type="text/javascript" src="js/luxon.min.js"></script>
+        <!-- Mis Scripts -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="theme-selector">
+            <div id="to-base"></div>
+            <div id="to-lilac"></div>
+            <div id="to-golden"></div>
+            <div id="to-dark"></div>
+        </div>
+        <div id="bienvenido">Bienvenido!</div>
+        <section id="global">
+            <!-- Cabecera -->
+            <header>
+                <div id="logo">
+                    <h1>Tomoyo no Showroom</h1>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <navbar>
+                    <ul id="menu">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="#">GALERÍA</a></li>
+                        <li><a href="about.html">CONTACTO</a></li>
+                    </ul>
+                </navbar>
+            </header>
+
+            <!-- Slider -->
+            <div id="slider">
+                <div class="bxslider">
+                    <div><img src="Imgs/Slide2.png"></div>
+                    <div><img src="Imgs/Slide1.png"></div>
+                    <div><img src="Imgs/Slide3.png"></div>
+                  </div>
+            </div>
+
+            <!-- Contenido -->
+            <section id="content">
+                <div id="posts">
+                    <article class="post">
+                        <h2>Cardcaptor Sakura</h2>
+                        <span class="date">Primera publicación: 1 de mayo de 1996</span>
+                        <p>Cardcaptor Sakura (japonés: カードキャプターさくら, Hepburn: Kādokyaputā Sakura), abreviada como CCS, es una serie de manga japonesa escrita e ilustrada por el grupo de manga Clamp. Publicada mensualmente en la revista de manga shōjo Nakayoshi desde mayo de 1996 hasta junio de 2000, también fue publicada en 12 volúmenes tankōbon por Kodansha entre noviembre de 1996 y julio de 2000. La historia se centra en Sakura Kinomoto, una estudiante de primaria que descubre poderes mágicos tras liberar accidentalmente un conjunto de cartas mágicas en el mundo; debe recuperar las cartas para evitar una catástrofe. Cada una de estas cartas otorga diferentes poderes mágicos, y sólo pueden ser activadas por alguien con habilidades mágicas inherentes. Una secuela de Clamp, Cardcaptor Sakura: Clear Card, centrada en Sakura en la escuela secundaria, comenzó a serializarse en Nakayoshi en 2016.
+
+                            El manga fue adaptado en una serie de televisión anime de 70 episodios por Madhouse que se emitió en el canal de televisión por satélite japonés NHK BS2 desde abril de 1998 hasta marzo de 2000. Otros medios de comunicación incluyen dos películas de anime, videojuegos, libros de arte, libros ilustrados y cómics de películas. Tokyopop publicó el manga en inglés en Norteamérica desde marzo de 2000 hasta agosto de 2003. Cuando la licencia de Tokyopop expiró, Dark Horse Manga publicó la serie en ediciones ómnibus desde octubre de 2010 hasta septiembre de 2012. El anime fue doblado al inglés por Omni Productions, de Hong Kong, y se emitió en el sudeste asiático y el sur de Asia en el canal Animax Asia.
+                            
+                            Nelvana concedió la licencia de la serie de televisión y la primera película para Norteamérica con el título en inglés de Cardcaptors, que se emitió por primera vez en Kids' WB de junio de 2000 a diciembre de 2001. Los 70 episodios fueron doblados; mientras que otros territorios de habla inglesa recibieron la serie completa, la versión emitida en la televisión norteamericana estaba muy editada en 39 episodios. La serie de televisión y las películas fueron sublicenciadas por Geneon, que las publicó sin editar con subtítulos en inglés.
+                            <a href="#" class="button-plus">Leer más</a>   
+                        </p>
+                        
+                    </article>
+
+                </div>
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4><span>¿Quién soy?</span></h4>
+                        <img src="Imgs/TomoyoAva.png"/>
+                        <p>Hija del presidente de la Compañía de Juguetes Daidouji, Sonomi Daidouji.
+                            Tengo acceso a la tecnología de la empresa de mi madre, y suministro a Sakura y a Kerberos diferentes dispositivos de comunicación.
+                        </p>
+                    </div>
+                    <div id="loguear">
+                        <h4><span>Iniciar sesión</span></h4>
+                        <form>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="form_name"/>
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email" id="form_email"/>
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="form_password"/>
+                            <input type="submit" id="button-submit" value="Ingresar"/>
+                        </form>
+                    </div>
+                </aside>
+                <div class="clearfix"></div>
+            </section>
+        </section>
+
+        <footer>
+            Tomoyo no Showroom by Lev'traru
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+    </body>
+</html>
+
