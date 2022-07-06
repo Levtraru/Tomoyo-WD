@@ -1,15 +1,5 @@
 $(document).ready(()=>{
 
-    // Slider
-    $('.bxslider').bxSlider({
-        mode: 'fade',
-        auto: true,
-        stopAutoOnClick: true,
-        pager: false,
-        controls: false
-    });
-
-
     // Tema en localStorage
     var tema = $("#theme");
     var cargado = localStorage.getItem("color");
