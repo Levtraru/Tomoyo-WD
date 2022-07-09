@@ -1,5 +1,6 @@
 #contenedor-galeria{
-  width: 100%;
+  border: 1px solid #c5c5c5;
+  width: 99.8%;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
@@ -21,7 +22,6 @@
   margin: 10px;
 }
 .txt-galeria{
-  font-weight: bold;
   text-align: center;
   text-justify: center;
 }

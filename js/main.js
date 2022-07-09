@@ -1,5 +1,14 @@
 $(document).ready(()=>{
 
+    // Slider
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        auto: true,
+        stopAutoOnClick: true,
+        pager: false,
+        controls: false
+    });
+
     // Tema en localStorage
     var tema = $("#theme");
     var cargado = localStorage.getItem("color");
@@ -64,9 +73,17 @@ $(document).ready(()=>{
         });
     };
 
-    //Acordeon en about
-    if(window.location.href.indexOf('about')>-1){
-        $("#acordeon").accordion();
-    };
+    //Acordeon
+    $(".acordeon").accordion();
+
+    $(".tab-list").on("click", ".tab", function(event) {
+        event.preventDefault();
+      
+        $(".tab").removeClass("active");
+        $(".tab-content").removeClass("show");
+      
+        $(this).addClass("active");
+        $($(this).attr('href')).addClass("show");	
+      });
 
 });

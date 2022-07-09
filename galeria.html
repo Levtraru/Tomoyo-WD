@@ -1,156 +1,291 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tomoyo no Showroom</title>
-        <!-- Estilos CSS-->
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-        <link rel="stylesheet" type="text/css" href="css/galeria.css"/>
-        <link id="theme" rel="stylesheet" type="text/css" href="css/dark.css"/>
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- Mis Scripts -->
-        <script type="text/javascript" src="js/main.js"></script>
-    </head>
-    <body>
-        <div id="theme-selector">
-            <div id="to-base"></div>
-            <div id="to-dark"></div>
-            <div id="to-golden"></div>
-            <div id="to-lilac"></div>
-        </div>
-        <div id="bienvenido">Bienvenido!</div>
-        <section id="global">
-            <!-- Cabecera -->
-            <header>
-                <div id="logo">
-                    <h1>Tomoyo no Showroom</h1>
-                </div>
 
-                <div class="clearfix"></div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomoyo no Showroom</title>
+    <!-- Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/galeria.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabs.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/dark.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="js/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.13.1.custom/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.13.1.custom/jquery-ui.theme.min.css" />
+    <script type="text/javascript" src="js/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+    <!-- Sliders -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Mis Scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
 
-                <navbar>
-                    <ul id="menu">
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="#">GALERIA</a></li>
-                        <li><a href="about.html">CONTACTO</a></li>
-                    </ul>
-                </navbar>
-            </header>
-
-            <!-- Slider -->
-            <div id="slider">
+<body>
+    <div id="theme-selector">
+        <div id="to-base"></div>
+        <div id="to-dark"></div>
+        <div id="to-golden"></div>
+        <div id="to-lilac"></div>
+    </div>
+    <div id="bienvenido">Bienvenido!</div>
+    <section id="global">
+        <!-- Cabecera -->
+        <header>
+            <div id="logo">
+                <h1>Tomoyo no Showroom</h1>
             </div>
 
-            <!-- Contenido -->
-            <section id="content">
-                <div id="contenedor-galeria">
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/2-Shadow.webp" alt="">
-                        <div class="txt-galeria">The Shadow</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/3-Watery.webp" alt="">
-                        <div class="txt-galeria">The Watery</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/4-RainWood.webp" alt="">
-                        <div class="txt-galeria">The Rain and The Wood</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/6-Illusion.webp" alt="">
-                        <div class="txt-galeria">The Illusion</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/6b-Illusion.webp" alt="">
-                        <div class="txt-galeria">The Illusion</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/7-Silent.webp" alt="">
-                        <div class="txt-galeria">The Slient</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/8-Thunder.webp" alt="">
-                        <div class="txt-galeria">The Thunder</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/12-Time.webp" alt="">
-                        <div class="txt-galeria">The Time</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/15-Storm.webp" alt="">
-                        <div class="txt-galeria">The Storm</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/20-Fight.webp" alt="">
-                        <div class="txt-galeria">The Fight</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/23-Song.webp" alt="">
-                        <div class="txt-galeria">The Song</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/24-Little.webp" alt="">
-                        <div class="txt-galeria">The Little</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/30-Dash.webp" alt="">
-                        <div class="txt-galeria">The Dash</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/31-BigCreate.webp" alt="">
-                        <div class="txt-galeria">The Big and The Create</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/36-Snow.webp" alt="">
-                        <div class="txt-galeria">The Snow</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/43-Twin.webp" alt="">
-                        <div class="txt-galeria">The Twin</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/45-46-Judgement.webp" alt="">
-                        <div class="txt-galeria">Judgement</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/47-Jester.webp" alt="">
-                        <div class="txt-galeria">Jester</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/48-Firey.webp" alt="">
-                        <div class="txt-galeria">The Firey</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/50-Sword.webp" alt="">
-                        <div class="txt-galeria">The Sword</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/52-Erase.webp" alt="">
-                        <div class="txt-galeria">The Erase</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/58-False.webp" alt="">
-                        <div class="txt-galeria">False</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/59-Nurse.webp" alt="">
-                        <div class="txt-galeria">Nurse</div>
-                    </div>
-                    <div class="contenedores-galeria">
-                        <img class="img-galeria" src="./Imgs/trajes/68-69-Stars.webp" alt="">
-                        <div class="txt-galeria">Stars</div>
-                    </div>          
-                </div>
-                <div class="clearfix"></div>
-            </section>
-        </section>
+            <div class="clearfix"></div>
 
-        <footer>
-            Tomoyo no Showroom by Lev'traru
-            <a href="#" class="subir">Ir arriba</a>
-        </footer>
-    </body>
+            <navbar>
+                <ul id="menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#">GALERIA</a></li>
+                    <li><a href="about.html">CONTACTO</a></li>
+                </ul>
+            </navbar>
+        </header>
+
+        <!-- Slider -->
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="Imgs/Slide2.png"></div>
+                <div><img src="Imgs/Slide1.png"></div>
+                <div><img src="Imgs/Slide3.png"></div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+        <section id="content">
+
+            <h1></h1>
+            <div class="tabs">
+                <nav class="tab-list">
+                    <a class="tab active" href="#tab-1">Trajes de Openings</a>
+                    <a class="tab" href="#tab-2">Trajes de Combate</a>
+                    <a class="tab" href="#tab-3">Trajes de Películas</a>
+                    <a class="tab" href="#tab-4">Ropa Casual</a>
+                    <a class="tab" href="#tab-5">Otras Vestimentas</a>
+                </nav>
+
+                <div id="tab-1" class="tab-content show">
+                    <div id="contenedor-galeria">
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Op1-Catch_You_Catch_Me.webp" alt="">
+                            <div class="txt-galeria">Opening 1 - Catch You Catch Me</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Op2-Tobira_wo_Akete.webp" alt="">
+                            <div class="txt-galeria">Opening 2 - Tobira wo Akete</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Op3-Platinum_Star_Dress_with_Wings.webp" alt="">
+                            <div class="txt-galeria">Opening 3 - Platinum</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-2" class="tab-content">
+                    <div id="contenedor-galeria">
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/2-Shadow.webp" alt="">
+                            <div class="txt-galeria">The Shadow</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/3-Watery.webp" alt="">
+                            <div class="txt-galeria">The Watery</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/4-RainWood.webp" alt="">
+                            <div class="txt-galeria">The Rain and The Wood</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/6-Illusion.webp" alt="">
+                            <div class="txt-galeria">The Illusion</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/6b-Illusion.webp" alt="">
+                            <div class="txt-galeria">The Illusion</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/7-Silent.webp" alt="">
+                            <div class="txt-galeria">The Slient</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/8-Thunder.webp" alt="">
+                            <div class="txt-galeria">The Thunder</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/12-Time.webp" alt="">
+                            <div class="txt-galeria">The Time</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/15-Storm.webp" alt="">
+                            <div class="txt-galeria">The Storm</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/20-Fight.webp" alt="">
+                            <div class="txt-galeria">The Fight</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/23-Song.webp" alt="">
+                            <div class="txt-galeria">The Song</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/24-Little.webp" alt="">
+                            <div class="txt-galeria">The Little</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/30-Dash.webp" alt="">
+                            <div class="txt-galeria">The Dash</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/31-BigCreate.webp" alt="">
+                            <div class="txt-galeria">The Big and The Create</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/36-Snow.webp" alt="">
+                            <div class="txt-galeria">The Snow</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/43-Twin.webp" alt="">
+                            <div class="txt-galeria">The Twin</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/45-46-Judgement.webp" alt="">
+                            <div class="txt-galeria">Judgement</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/47-Jester.webp" alt="">
+                            <div class="txt-galeria">Jester</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/48-Firey.webp" alt="">
+                            <div class="txt-galeria">The Firey</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/50-Sword.webp" alt="">
+                            <div class="txt-galeria">The Sword</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/52-Erase.webp" alt="">
+                            <div class="txt-galeria">The Erase</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/58-False.webp" alt="">
+                            <div class="txt-galeria">False</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/59-Nurse.webp" alt="">
+                            <div class="txt-galeria">Nurse</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/68-69-Stars.webp" alt="">
+                            <div class="txt-galeria">Stars</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-3" class="tab-content">
+                    <div id="contenedor-galeria">
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Movie-Green_Arrow.webp" alt="">
+                            <div class="txt-galeria">The Arrow</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Movie-Pink_and_Purple_Sakura.webp" alt="">
+                            <div class="txt-galeria">Pink and Purple Sakura</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Movie-Blue_Star.webp" alt="">
+                            <div class="txt-galeria">Blue Star</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Movie-Princess.webp" alt="">
+                            <div class="txt-galeria">Princess</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Movie-Final_Battle.webp" alt="">
+                            <div class="txt-galeria">Final Battle</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-4" class="tab-content">
+                    <div id="contenedor-galeria">
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Casual-Outfit_de_Vuelo.webp" alt="">
+                            <div class="txt-galeria">Outfit de Vuelo</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Casual-Pijama.webp" alt="">
+                            <div class="txt-galeria">Pijama</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Casual-Saco_Invernal_Rojo.png" alt="">
+                            <div class="txt-galeria">Saco Invernal Rojo</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Casual-Saco_Invernal_Rojo.png" alt="">
+                            <div class="txt-galeria">Saco Invernal Rojo</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Casual-Vestido_de_Verano.webp" alt="">
+                            <div class="txt-galeria">Vestido de Verano</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-5" class="tab-content">
+                    <div id="contenedor-galeria">
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Otras-Hakama.webp" alt="">
+                            <div class="txt-galeria">Hakama</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Otras-Kimono.webp" alt="">
+                            <div class="txt-galeria">Kimono</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Otras-Maid.webp" alt="">
+                            <div class="txt-galeria">Maid</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Otras-Outfit_Chino.webp" alt="">
+                            <div class="txt-galeria">Outfit Chino</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Otras-Pais_de_las_Maravillas.webp" alt="">
+                            <div class="txt-galeria">Wonderland</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Otras-Traje_de_Principe.webp" alt="">
+                            <div class="txt-galeria">Príncipe</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Otras-Vestido_de_Remembranza.webp" alt="">
+                            <div class="txt-galeria">Remembranza</div>
+                        </div>
+                        <div class="contenedores-galeria">
+                            <img class="img-galeria" src="./Imgs/trajes/Otras-Yukata_Rosa.webp" alt="">
+                            <div class="txt-galeria">Yukata</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </section>
+    </section>
+
+    <footer>
+        Tomoyo no Showroom by Lev'traru
+        <a href="#" class="subir">Ir arriba</a>
+    </footer>
+</body>
+
 </html>
